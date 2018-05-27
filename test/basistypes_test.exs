@@ -2,8 +2,6 @@ defmodule BasicTypesTest do
   use ExUnit.Case
   use ExUnit.Parameterized
 
-  doctest HelloWorld
-
   describe "Basic Types" do
     test "atoms" do
       assert is_atom(:atom) == true
