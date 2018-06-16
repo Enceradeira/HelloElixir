@@ -18,4 +18,14 @@ defmodule Math do
   defp sum_internal(a, b) do
     a + b
   end
+
+  def sum_list([]) do
+    0
+  end
+
+  def sum_list([head|tail]) do
+    head + sum_list(tail)
+  end
+
+
 end
